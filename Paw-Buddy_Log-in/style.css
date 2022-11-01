@@ -1,0 +1,194 @@
+*
+{
+    background-color: aliceblue;
+}
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*Header's CSS*/
+.container1
+{
+    padding: 15px;
+    margin: 15px;
+}
+.container1 .head h1
+{
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 6px 4px rgb(216, 161, 11);
+}
+
+.arrow-left
+{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.arrow-right
+{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+.arrow-left img
+{
+    width: 90px;
+}
+.arrow-right img
+{
+    width: 90px;
+}
+
+.container2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container1 .head h1:hover
+{
+    color: rgb(216, 161, 11);
+    text-shadow: 1px 6px 4px black;
+    
+}
+
+/* Form's  CSS*/
+.form
+{
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-item
+{
+    padding: 15px;
+}
+.form-item .form-control
+{
+    width: 400px;
+    height: 25px;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-size: 16px;
+    background:rgb(209 207 207 / 56%);
+    border: 2px solid whitesmoke;
+    box-shadow: 3px 5px rgb(155 155 155 / 56%);
+}
+.form .form-item textarea.form-control
+{
+    height: 140px;
+}
+.form .form-item .form-control:focus
+{
+    box-shadow: 0 0 20px 10px rgba(3, 3, 7, 0.15);
+}
+.form-item label
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Responsiveness*/
+
+@media (max-width:1000px)  and (min-width:840px)
+{
+.arrow-left
+{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.arrow-right
+{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+.arrow-left img
+{
+    width: 60px;
+}
+.arrow-right img
+{
+    width: 60px;
+}
+}
+@media (max-width:840px)  and (min-width:540px)
+{
+    .arrow-left
+    {
+        position: absolute;
+        top: 50%;
+        left: 3%;
+    }
+    .arrow-right
+    {
+        position: absolute;
+        top: 50%;
+        right: 3%;
+    }
+    .arrow-left img
+    {
+        width: 35px;
+    }
+    .arrow-right img
+    {
+        width: 35px;
+    }
+    .form{
+        padding: 30px;
+    }
+    .form-item .form-control
+    {
+        width: 330px;
+        height: 100%;
+    }
+    .container1 .head h1 
+    {
+        font-size: 50px ;
+    }
+}
+@media (max-width:540px)
+{
+    .arrow-left
+    {
+        position: absolute;
+        top: 50%;
+        left: 3%;
+    }
+    .arrow-right
+    {
+        position: absolute;
+        top: 50%;
+        right: 3%;
+    }
+    .arrow-left img
+    {
+        width: 35px;
+    }
+    .arrow-right img
+    {
+        width: 35px;
+    }
+    .form{
+        padding: 30px;
+    }
+    .form-item .form-control
+    {
+        width: 230px;
+        height: 100%;
+    }
+    .container1 .head h1 
+    {
+        font-size: 50px ;
+    }
+}
